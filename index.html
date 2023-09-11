@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <!-- Bài 1: Tính tiền lương nhân viên -->
+    <div class="container mt-5 Bai_tap">
+      <div class="Bai_code">
+        <h3>Bài 1: Tính tiền lương nhân viên</h3>
+        <div class="form-group">
+          <label for="">Nhập vào số ngày làm: </label>
+          <input
+            id="soNgay"
+            class="w-15 mt-3"
+            type="text"
+            class="form-control"
+            id=""
+            placeholder=""
+          />
+        </div>
+        <button class="btn btn-primary mt-3 mb-3" onclick="tinhLuong()">
+          Tính lương
+        </button>
+        <div id="result"></div>
+      </div>
+
+      <div class="sodo">
+        <div class="box1">
+          <ul>
+            <li>Lương 1 ngày 100.000</li>
+            <li>Nhập vào số ngày làm</li>
+          </ul>
+        </div>
+        <div class="box2">
+          <ul>
+            <li>B1:Khai báo biến soNgayEl và gán giá trị</li>
+            <li>
+              B2: Khai báo biến luong1Ngay và gán <br />
+              giá trị = 100.000
+            </li>
+            <li>B3: Lấy biến soNgayEl * luong1Ngay</li>
+          </ul>
+        </div>
+        <div class="box3">
+          <ul>
+            <li>Kết quả lương</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- Bài 2: Tính giá trị trung bình -->
+    <div class="container Bai_tap">
+      <div class="Bai_code">
+        <h3>Bài 2: Tính giá trị trung bình</h3>
+        <div class="form-group">
+          <label for="">Nhập vào 5 số thực: </label>
+          <input
+            class="w-15 mt-3"
+            type="text"
+            class="form-control"
+            id="soThuc"
+            placeholder=""
+          />
+        </div>
+        <button onclick="tinhSothuc()" class="btn btn-primary mt-3 mb-3">
+          Tính giá trị trung bình
+        </button>
+        <div id="trungBinh"></div>
+      </div>
+      <div class="sodo">
+        <div class="box1">
+          <ul>
+            <li>Nhập vào 5 số thực</li>
+            <li>
+              Tính giá trị trung bình <br />của các số vừa nhập <br />và in ra
+              kết quả
+            </li>
+          </ul>
+        </div>
+        <div class="box2">
+          <ul>
+            <li>B1:Khai báo biến soThucEl và gán giá trị</li>
+            <li>B2: Khai báo các biến so1, so2, so3, so4, so5, sumSothuc</li>
+            <li>
+              B3: Tách các số theo thứ tự và công thức sau: <br />
+              so1 = Math.floor(soThucEl.value / 10000);<br />
+              so2 = Math.floor(soThucEl.value % 10000 / 1000 );<br />
+              so3 = Math.floor(soThucEl.value % 10000 % 1000 / 100);<br />
+              so4 = Math.floor(soThucEl.value % 10000 % 1000 % 100 /10);<br />
+              so5 = Math.floor(soThucEl.value % 10);
+            </li>
+            <li>Tính tổng của các số sau đó chia cho 5</li>
+          </ul>
+        </div>
+        <div class="box3">
+          <ul>
+            <li>Kết quả trung bình <br />của các số hạng</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- Bài 3: Quy đổi tiền -->
+    <div class="container Bai_tap">
+      <div class="Bai_code">
+        <h3>Bài 3: Quy đổi tiền</h3>
+        <div class="form-group">
+          <label for="">Nhập và số tiền (USD): </label>
+          <input
+            class="w15"
+            type="text"
+            class="form-control"
+            id="soTien"
+            placeholder=""
+          />
+        </div>
+
+        <button onclick="quyDoi()" class="btn btn-primary mt-3 mb-3">
+          Quy đổi tiền
+        </button>
+
+        <div id="thanhTien"></div>
+      </div>
+
+      <div class="sodo">
+        <div class="box1">
+          <ul>
+            <li>Gía quy đổi USD = 23.500 VND</li>
+            <li>Nhập vào số tiền cần quy đổi</li>
+            <li>Quy đổi tiền ra VND</li>
+          </ul>
+        </div>
+        <div class="box2">
+          <ul>
+            <li>B1:Khai báo biến soTienEl và gán giá trị</li>
+            <li>B2: Lấy biến soTienEl * 23.500</li>
+          </ul>
+        </div>
+        <div class="box3">
+          <ul>
+            <li>Kết quả quy đổi tiền</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- Bài 4: Tính diện tích, chu vi hình chũ nhật -->
+    <div class="container Bai_tap">
+      <div class="Bai_code">
+        <h3>Bài 4: Tính diện tích, chu vi hình chữ nhật</h3>
+        <div class="form-group">
+          <label for="">Nhập vào chiều dài:</label>
+          <input
+            class="w15 mt-3 ms-3"
+            type="text"
+            class="form-control"
+            id="chieuDai"
+            placeholder=""
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Nhập vào chiều rộng:</label>
+          <input
+            class="w15 mt-3 ms-1"
+            type="text"
+            class="form-control"
+            id="chieuRong"
+            placeholder=""
+          />
+        </div>
+
+        <button onclick="tinhDienChu()" class="btn btn-primary mt-3 mb-3">
+          Tính diện tích và chu vi
+        </button>
+
+        <div id="hcn"></div>
+      </div>
+
+      <div class="sodo">
+        <div class="box1">
+          <ul>
+            <li>
+              Nhập và chiều dài và chiều rộng <br />
+              của hình chữ nhật
+            </li>
+            <li>Tính chu vi và diện tích</li>
+          </ul>
+        </div>
+        <div class="box2">
+          <ul>
+            <li>B1:Khai báo biến chieuDaiEl, chieuRongEl và gán giá trị</li>
+            <li>B2: Khai báo biến dienTich, chuVi</li>
+            <li>
+              B3: Tính diện tích và chu vi bằng công thức: <br />
+              dienTich = chieuDaiEl.value * chieuRongEl.value <br />
+              chuVi = 2 * (chieuDaiEl.value*1 + chieuRongEl.value*1);
+            </li>
+          </ul>
+        </div>
+        <div class="box3">
+          <ul>
+            <li>
+              Kết quả diện tích và <br />
+              chu vi của hình chữ nhật
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- Bài 5: Tính tổng 2 kí số -->
+    <div class="container Bai_tap">
+      <div class="Bai_code">
+        <h3>Bài 5: Tính tổng 2 kí số</h3>
+        <div class="form-group">
+          <label for="">Nhập vào 1 số có 2 chữ số: </label>
+          <input
+            class="w-15 mt-3 mb-3"
+            type="text"
+            class="form-control"
+            id="kiSo"
+            placeholder=""
+          />
+        </div>
+
+        <button onclick="tinhTong()" class="btn btn-primary mb-3">
+          Tính tổng 2 kí số
+        </button>
+        <div id="calc"></div>
+      </div>
+
+      <div class="sodo">
+        <div class="box1">
+          <ul>
+            <li>Nhập vào 1 số có 2 chữ số</li>
+            <li>Tính tổng kí số vừa nhập</li>
+          </ul>
+        </div>
+        <div class="box2">
+          <ul>
+            <li>B1: Khai báo biến kiSoEl và gán giá trị</li>
+            <li>B2: Khai báo ki1, ki2, sumKiso</li>
+            <li>
+              B3: Tách kí số theo công thức sau: <br />
+              ki1 = Math.floor(kiSoEl.value / 10);<br />
+              ki2 = Math.floor(kiSoEl.value % 10);
+            </li>
+            <li>B4: Tính tổng 2 kí số sumKiso = ki1 + ki2</li>
+          </ul>
+        </div>
+        <div class="box3">
+          <ul>
+            <li>Kết quả tính tổng của 2 kí số</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- MY JS -->
+    <script src="./index.js"></script>
+  </body>
+</html>

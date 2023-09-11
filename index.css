@@ -1,0 +1,27 @@
+/* Sơ đồ 3 khối của 5 bài */
+.Bai_tap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sodo{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.box1{
+    border: 2px red solid;
+}
+
+.box2{
+    border: 2px green solid;
+    margin: 0 20px;
+}
+
+.box3{
+    border: 2px blue solid;
+}
+
+
